@@ -4,7 +4,7 @@ Fuddi (pronounced _foodie_) is a project that aims to gather information about f
 
 The main goal of this project is to create an ontological representation of food facts that can be used in data processing and automatically generate human-readable pages based on the ontologies that are stored here.
 
-The generator should read ontologies from this repository and then update the knowledge base available at https://fuddi.eu.
+The generator should read ontologies from this repository and then update the knowledge base available at https://kb.fuddi.eu.
 
 # License
 
