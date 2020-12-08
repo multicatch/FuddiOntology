@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://fuddi.eu/ontology/FFO/Food#"
+     xml:base="https://fuddi.eu/ontology/FFO/Food"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+    <owl:Ontology rdf:about="https://fuddi.eu/ontology/FFO/Food">
+        <owl:versionIRI rdf:resource="https://fuddi.eu/ontology/FFO/2020/11/Food"/>
+        <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
+        <dcterms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://opensource.org/licenses/MIT</dcterms:license>
+        <rdfs:label xml:lang="en">Food Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#AminoAcid -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#AminoAcid">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:label xml:lang="en">amino acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#AscorbicAcid -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#AscorbicAcid">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Vitamin"/>
+        <rdfs:label xml:lang="en">Vitamin C</rdfs:label>
+        <skos:altLabel xml:lang="en">Ascorbin Acid</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#EssentialNutrient -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Nutrient"/>
+        <rdfs:label xml:lang="en">essential nutrient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#FattyAcid -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#FattyAcid">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:label xml:lang="en">fatty acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Food -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Food">
+        <rdfs:label xml:lang="en">food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Gram -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Gram">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMass"/>
+        <rdfs:label xml:lang="en">gram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Mineral -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Mineral">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:label xml:lang="en">mineral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Nutrient -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Nutrient">
+        <rdfs:label xml:lang="en">nutrient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Portion -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Portion">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity"/>
+        <rdfs:label xml:lang="en">portion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfEnergy -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfEnergy">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement"/>
+        <rdfs:label xml:lang="en">unit of energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfMass -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfMass">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity"/>
+        <rdfs:label xml:lang="en">unit of mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement">
+        <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement"/>
+        <rdfs:label xml:lang="en">unit of quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfVolume -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfVolume">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity"/>
+        <rdfs:label xml:lang="en">unit of volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Vitamin -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Vitamin">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:label xml:lang="en">vitamin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Water -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Water">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
