@@ -6,6 +6,8 @@ The main goal of this project is to create an ontological representation of food
 
 The generator should read ontologies from this repository and then update the knowledge base available at https://kb.fuddi.eu.
 
+Official website: https://fuddi.eu
+
 ## Generation
 
 All ontologies stored in the `ontology` directory are automatically converted into Wiki pages using the [FuddiWikiGenerator](https://github.com/multicatch/FuddiWikiGenerator).
