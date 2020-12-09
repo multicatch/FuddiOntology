@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://fuddi.eu/ontology/FFO/Food#"
      xml:base="https://fuddi.eu/ontology/FFO/Food"
+     xmlns:ffo="https://fuddi.eu/ontology/FFO/Food#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:Units="https://fuddi.eu/ontology/FGO/Units#"
      xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:fgounits="https://fuddi.eu/ontology/FGO/2020/11/Units#"
      xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
     <owl:Ontology rdf:about="https://fuddi.eu/ontology/FFO/Food">
         <owl:versionIRI rdf:resource="https://fuddi.eu/ontology/FFO/2020/11/Food"/>
         <owl:imports rdf:resource="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf"/>
+        <owl:imports rdf:resource="https://fuddi.eu/ontology/FGO/2020/11/Units"/>
         <dcterms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://opensource.org/licenses/MIT</dcterms:license>
         <rdfs:label xml:lang="en">Food Ontology</rdfs:label>
     </owl:Ontology>
@@ -38,41 +42,6 @@
     <!-- http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn -->
 
     <owl:AnnotationProperty rdf:about="http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#grams -->
-
-    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FFO/Food#grams">
-        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMass"/>
-    </rdfs:Datatype>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#kilograms -->
-
-    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FFO/Food#kilograms">
-        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMass"/>
-    </rdfs:Datatype>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#milligrams -->
-
-    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FFO/Food#milligrams">
-        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMass"/>
-    </rdfs:Datatype>
     
 
 
@@ -117,16 +86,6 @@
     
 
 
-    <!-- https://fuddi.eu/ontology/FFO/Food#hasMass -->
-
-    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasMass">
-        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasQuantity"/>
-        <rdfs:label xml:lang="en">has mass</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMass"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://fuddi.eu/ontology/FFO/Food#hasMinerals -->
 
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasMinerals">
@@ -141,15 +100,6 @@
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasNutrients">
         <rdfs:label xml:lang="en">has nutrients</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#Nutrient"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#hasQuantity -->
-
-    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasQuantity">
-        <rdfs:label xml:lang="en">has quantity</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity"/>
     </owl:DatatypeProperty>
     
 
@@ -169,16 +119,6 @@
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVitamins">
         <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasEssentialNutrients"/>
         <rdfs:label xml:lang="en">has vitamins</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#hasVolume -->
-
-    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVolume">
-        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasQuantity"/>
-        <rdfs:label xml:lang="en">has volume</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfVolume"/>
     </owl:DatatypeProperty>
     
 
@@ -215,7 +155,7 @@
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Apple">
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Food"/>
-        <rdfs:label>apple</rdfs:label>
+        <rdfs:label xml:lang="en">apple</rdfs:label>
     </owl:Class>
     
 
@@ -273,41 +213,6 @@
     
 
 
-    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfMass -->
-
-    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfMass">
-        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity"/>
-        <rdfs:label xml:lang="en">unit of mass</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement -->
-
-    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement">
-        <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity -->
-
-    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity">
-        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfMeasurement"/>
-        <rdfs:label xml:lang="en">unit of quantity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://fuddi.eu/ontology/FFO/Food#UnitOfVolume -->
-
-    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#UnitOfVolume">
-        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#UnitOfQuantity"/>
-        <rdfs:label xml:lang="en">unit of volume</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://fuddi.eu/ontology/FFO/Food#Vitamin -->
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Vitamin">
@@ -341,8 +246,8 @@
 
     <owl:NamedIndividual rdf:about="https://fuddi.eu/ontology/FFO/Food#portionOfApple">
         <rdf:type rdf:resource="https://fuddi.eu/ontology/FFO/Food#Apple"/>
-        <hasMass rdf:datatype="https://fuddi.eu/ontology/FFO/Food#grams">200</hasMass>
-        <hasVitaminC rdf:datatype="https://fuddi.eu/ontology/FFO/Food#milligrams">4.6</hasVitaminC>
+        <hasVitaminC rdf:datatype="https://fuddi.eu/ontology/FGO/Units#milligrams">4.6</hasVitaminC>
+        <Units:hasMass rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">200</Units:hasMass>
         <rdfs:label xml:lang="en">portion of apple</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
