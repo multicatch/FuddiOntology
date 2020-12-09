@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://fuddi.eu/ontology/FGO/Units#"
+     xml:base="https://fuddi.eu/ontology/FGO/Units"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:fgounits="https://fuddi.eu/ontology/FGO/Units#"
+     xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+    <owl:Ontology rdf:about="https://fuddi.eu/ontology/FGO/Units">
+        <owl:versionIRI rdf:resource="https://fuddi.eu/ontology/FGO/2020/11/Units"/>
+        <dcterms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://opensource.org/licenses/MIT</dcterms:license>
+        <rdfs:label xml:lang="en">Fuddi General Ontology - Units</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#grams -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#grams">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#joules -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#joules">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#kilograms -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilograms">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#kilojoules -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilojoules">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#liter -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#liter">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#milligrams -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milligrams">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#milliliter -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milliliter">
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#hasEnergy -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasEnergy">
+        <rdfs:label xml:lang="en">has energy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#hasMass -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasMass">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#hasQuantity"/>
+        <rdfs:label xml:lang="en">has mass</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#hasQuantity -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasQuantity">
+        <rdfs:label xml:lang="en">has quantity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#hasVolume -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasVolume">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#hasQuantity"/>
+        <rdfs:label xml:lang="en">has volume</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement"/>
+        <rdfs:label xml:lang="en">unit of energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#UnitOfMass -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfMass">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity"/>
+        <rdfs:label xml:lang="en">unit of mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement">
+        <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement"/>
+        <rdfs:label xml:lang="en">unit of quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#UnitOfVolume -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity"/>
+        <rdfs:label xml:lang="en">unit of volume</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
