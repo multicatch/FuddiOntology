@@ -6,6 +6,12 @@ The main goal of this project is to create an ontological representation of food
 
 The generator should read ontologies from this repository and then update the knowledge base available at https://kb.fuddi.eu.
 
-# License
+## Generation
+
+All ontologies stored in the `ontology` directory are automatically converted into Wiki pages using the [FuddiWikiGenerator](https://github.com/multicatch/FuddiWikiGenerator).
+
+Wiki generation is triggered by a push to the main branch of this repository. 
+
+## License
 
 All code and ontologies stored here are licensed under MIT License.
