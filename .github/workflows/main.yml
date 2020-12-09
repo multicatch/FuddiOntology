@@ -33,7 +33,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run generator
         run: sh ./generator/generate.sh
-	env:
-	  WIKIMEDIA_LOGIN: ${{ secrets.FUDDI_BOT_LOGIN }}
-	  WIKIMEDIA_PASSWORD: ${{ secrets.FUDDI_BOT_PASSWORD }}
+        env:
+          WIKIMEDIA_LOGIN: ${{ secrets.FUDDI_BOT_LOGIN }}
+          WIKIMEDIA_PASSWORD: ${{ secrets.FUDDI_BOT_PASSWORD }}
 
