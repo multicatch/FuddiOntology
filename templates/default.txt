@@ -10,3 +10,17 @@
 | Type || <nowiki>{{ nsName[subjectType.namespace] }}:{{ subjectType.identifier }}</nowiki>
 |}
 
+== All properties ==
+
+{| class="wikitable"
+|+ Subject info
+|-
+! Property name !! Value
+{% for property in properties %}
+{% for propertyValue in property.value %}
+|-
+| {{ wikiReadable(property.key) }} ||   {{ wikiReadable(propertyValue) }}
+
+{% endfor %}
+{% endfor %}
+|)
