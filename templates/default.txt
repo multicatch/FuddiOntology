@@ -1,0 +1,12 @@
+'''{{ properties.get(rdfs.get("label"))[0].valueLiteral.value }}'''
+
+{| class="wikitable"
+|+ Subject info
+|-
+! Property name !! Value
+|-
+| URI || <nowiki>{{ subjectUri.uri }}</nowiki>
+|-
+| Type || <nowiki>{{ nsName[subjectType.namespace] }}:{{ subjectType.identifier }}</nowiki>
+|}
+

@@ -146,6 +146,7 @@
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#AminoAcid">
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:isDefinedBy xml:lang="en">any of a group of organic molecules that consist of a basic amino group, an acidic carboxyl group, and a unique organic side chain.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">amino acid</rdfs:label>
     </owl:Class>
     

@@ -1,0 +1,13 @@
+'''{{ properties.get(rdfs.get("label"))[0].valueLiteral.value | title }}''' - {{ properties.get(rdfs.get("isDefinedBy"))[0].valueLiteral.value | default("no definition in ontology.") }}
+
+{| class="wikitable"
+|+ Subject info
+|-
+! Property name !! Value
+|-
+| URI || <nowiki>{{ subjectUri.uri }}</nowiki>
+|-
+| Type || <nowiki>{{ nsName[subjectType.namespace] }}:{{ subjectType.identifier }}</nowiki>
+|}
+ 
+
