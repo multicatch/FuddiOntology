@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://fuddi.eu/ontology/FFO/Food#"
-     xml:base="https://fuddi.eu/ontology/FFO/Food"
+<rdf:RDF xmlns="#"
      xmlns:ffo="https://fuddi.eu/ontology/FFO/Food#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -8,9 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:Units="https://fuddi.eu/ontology/FGO/Units#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:fgounits="https://fuddi.eu/ontology/FGO/2020/11/Units#"
+     xmlns:fgounits="https://fuddi.eu/ontology/FGO/Units#"
      xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
     <owl:Ontology rdf:about="https://fuddi.eu/ontology/FFO/Food">
         <owl:versionIRI rdf:resource="https://fuddi.eu/ontology/FFO/2020/11/Food"/>
@@ -247,8 +245,8 @@
 
     <owl:NamedIndividual rdf:about="https://fuddi.eu/ontology/FFO/Food#portionOfApple">
         <rdf:type rdf:resource="https://fuddi.eu/ontology/FFO/Food#Apple"/>
-        <hasVitaminC rdf:datatype="https://fuddi.eu/ontology/FGO/Units#milligrams">4.6</hasVitaminC>
-        <Units:hasMass rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">200</Units:hasMass>
+        <ffo:hasVitaminC rdf:datatype="https://fuddi.eu/ontology/FGO/Units#milligrams">4.6</ffo:hasVitaminC>
+        <fgounits:hasMass rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">200</fgounits:hasMass>
         <rdfs:label xml:lang="en">portion of apple</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
