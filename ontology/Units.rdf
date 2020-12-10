@@ -53,6 +53,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#grams -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#grams">
+        <rdfs:label xml:lang="en">grams</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
     
@@ -61,6 +62,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#joules -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#joules">
+        <rdfs:label xml:lang="en">joules</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
     </rdfs:Datatype>
     
@@ -69,6 +71,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#kilograms -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilograms">
+        <rdfs:label xml:lang="en">kilograms</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
     
@@ -77,14 +80,16 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#kilojoules -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilojoules">
+        <rdfs:label xml:lang="en">kilojoules</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
     </rdfs:Datatype>
     
 
 
-    <!-- https://fuddi.eu/ontology/FGO/Units#liter -->
+    <!-- https://fuddi.eu/ontology/FGO/Units#liters -->
 
-    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#liter">
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#liters">
+        <rdfs:label xml:lang="en">liters</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
     </rdfs:Datatype>
     
@@ -93,14 +98,16 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#milligrams -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milligrams">
+        <rdfs:label xml:lang="en">milligrams</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
     
 
 
-    <!-- https://fuddi.eu/ontology/FGO/Units#milliliter -->
+    <!-- https://fuddi.eu/ontology/FGO/Units#milliliters -->
 
-    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milliliter">
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milliliters">
+        <rdfs:label xml:lang="en">milliliters</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
     </rdfs:Datatype>
     
