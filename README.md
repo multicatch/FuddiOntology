@@ -1,4 +1,4 @@
-# Fuddi Food Ontology
+# Fuddi Ontology
 
 Fuddi (pronounced _foodie_) is a project that aims to gather information about food, nutrients and similar facts. 
 
