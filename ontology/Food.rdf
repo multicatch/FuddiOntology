@@ -247,6 +247,7 @@
         <rdf:type rdf:resource="https://fuddi.eu/ontology/FFO/Food#Apple"/>
         <ffo:hasVitaminC rdf:datatype="https://fuddi.eu/ontology/FGO/Units#milligrams">4.6</ffo:hasVitaminC>
         <fgounits:hasMass rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">200</fgounits:hasMass>
+        <rdfs:label xml:lang="pl">porcja jabłka</rdfs:label>
         <rdfs:label xml:lang="en">portion of apple</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
