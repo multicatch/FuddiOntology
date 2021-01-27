@@ -107,6 +107,39 @@
     
 
 
+    <!-- https://fuddi.eu/ontology/FFO/Food#hasProteins -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasProteins">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasEssentialNutrients"/>
+        <rdfs:label xml:lang="en">has proteins</rdfs:label>
+        <rdfs:label xml:lang="pl">ma białka</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#Protein"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#hasVitaminA -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVitaminA">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasVitamins"/>
+        <rdfs:label xml:lang="en">has vitamin A</rdfs:label>
+        <rdfs:label xml:lang="pl">ma witaminę A</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#VitaminA"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#hasVitaminB6 -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVitaminB6">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasVitamins"/>
+        <rdfs:label xml:lang="en">has vitamin B6</rdfs:label>
+        <rdfs:label xml:lang="pl">ma witaminę B6</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#VitaminB6"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://fuddi.eu/ontology/FFO/Food#hasVitaminC -->
 
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVitaminC">
@@ -114,6 +147,28 @@
         <rdfs:label xml:lang="en">has vitamin C</rdfs:label>
         <rdfs:label xml:lang="pl">ma witaminę C</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#AscorbicAcid"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#hasVitaminE -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVitaminE">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasVitamins"/>
+        <rdfs:label xml:lang="en">has vitamin E</rdfs:label>
+        <rdfs:label xml:lang="pl">ma witaminę E</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#VitaminE"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#hasVitaminK -->
+
+    <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FFO/Food#hasVitaminK">
+        <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasVitamins"/>
+        <rdfs:label xml:lang="en">has vitamin K</rdfs:label>
+        <rdfs:label xml:lang="pl">ma witaminę K</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#VitaminK"/>
     </owl:DatatypeProperty>
     
 
@@ -134,6 +189,7 @@
         <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#hasEssentialNutrients"/>
         <rdfs:label xml:lang="en">has water</rdfs:label>
         <rdfs:label xml:lang="pl">ma wodę</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FFO/Food#Water"/>
     </owl:DatatypeProperty>
     
 
@@ -181,6 +237,16 @@
     
 
 
+    <!-- https://fuddi.eu/ontology/FFO/Food#ConditionallyEssentialNutrient -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#ConditionallyEssentialNutrient">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Nutrient"/>
+        <rdfs:label xml:lang="en">conditionally essential nutrient</rdfs:label>
+        <rdfs:label xml:lang="pl">składnik względnie egzogenny</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://fuddi.eu/ontology/FFO/Food#EssentialNutrient -->
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient">
@@ -220,11 +286,41 @@
     
 
 
+    <!-- https://fuddi.eu/ontology/FFO/Food#NonEssentialNutrient -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#NonEssentialNutrient">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Nutrient"/>
+        <rdfs:label xml:lang="pl">nieistotny składnik odżywczy</rdfs:label>
+        <rdfs:label xml:lang="en">non-essential nutrient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#NonNutrient -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#NonNutrient">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Nutrient"/>
+        <rdfs:label xml:lang="en">non-nutrient</rdfs:label>
+        <rdfs:label xml:lang="pl">składnik nieodżywczy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://fuddi.eu/ontology/FFO/Food#Nutrient -->
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Nutrient">
         <rdfs:label xml:lang="en">nutrient</rdfs:label>
         <rdfs:label xml:lang="pl">składnik odżywczy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#Protein -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#Protein">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
+        <rdfs:label xml:lang="pl">białko</rdfs:label>
+        <rdfs:label xml:lang="en">protein</rdfs:label>
     </owl:Class>
     
 
@@ -235,6 +331,46 @@
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#EssentialNutrient"/>
         <rdfs:label xml:lang="en">vitamin</rdfs:label>
         <rdfs:label xml:lang="pl">witamina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#VitaminA -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#VitaminA">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Vitamin"/>
+        <rdfs:label xml:lang="en">vitamin A</rdfs:label>
+        <rdfs:label xml:lang="pl">witamina A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#VitaminB6 -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#VitaminB6">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Vitamin"/>
+        <rdfs:label xml:lang="en">vitamin B6</rdfs:label>
+        <rdfs:label xml:lang="pl">witamina B6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#VitaminE -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#VitaminE">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Vitamin"/>
+        <rdfs:label xml:lang="en">vitamin E</rdfs:label>
+        <rdfs:label xml:lang="pl">witamina E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FFO/Food#VitaminK -->
+
+    <owl:Class rdf:about="https://fuddi.eu/ontology/FFO/Food#VitaminK">
+        <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FFO/Food#Vitamin"/>
+        <rdfs:label xml:lang="en">vitamin K</rdfs:label>
+        <rdfs:label xml:lang="pl">witamina K</rdfs:label>
     </owl:Class>
     
 
@@ -264,7 +400,10 @@
 
     <owl:NamedIndividual rdf:about="https://fuddi.eu/ontology/FFO/Food#portionOfApple">
         <rdf:type rdf:resource="https://fuddi.eu/ontology/FFO/Food#Apple"/>
+        <ffo:hasProteins rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">0.52</ffo:hasProteins>
+        <ffo:hasVitaminB6 rdf:datatype="https://fuddi.eu/ontology/FGO/Units#milligrams">0.082</ffo:hasVitaminB6>
         <ffo:hasVitaminC rdf:datatype="https://fuddi.eu/ontology/FGO/Units#milligrams">4.6</ffo:hasVitaminC>
+        <ffo:hasWater rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">171</ffo:hasWater>
         <fgounits:hasMass rdf:datatype="https://fuddi.eu/ontology/FGO/Units#grams">200</fgounits:hasMass>
         <rdfs:label xml:lang="pl">porcja jabłka</rdfs:label>
         <rdfs:label xml:lang="en">portion of apple</rdfs:label>

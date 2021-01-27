@@ -53,6 +53,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#grams -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#grams">
+        <rdfs:label xml:lang="pl">gram</rdfs:label>
         <rdfs:label xml:lang="en">grams</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
@@ -62,7 +63,18 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#joules -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#joules">
+        <rdfs:label xml:lang="pl">dżul</rdfs:label>
         <rdfs:label xml:lang="en">joules</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#kilocalorie -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilocalorie">
+        <rdfs:label xml:lang="en">kilocalorie</rdfs:label>
+        <rdfs:label xml:lang="pl">kilokaloria</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
     </rdfs:Datatype>
     
@@ -71,6 +83,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#kilograms -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilograms">
+        <rdfs:label xml:lang="pl">kilogram</rdfs:label>
         <rdfs:label xml:lang="en">kilograms</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
@@ -80,6 +93,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#kilojoules -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#kilojoules">
+        <rdfs:label xml:lang="pl">kilodżul</rdfs:label>
         <rdfs:label xml:lang="en">kilojoules</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
     </rdfs:Datatype>
@@ -90,7 +104,18 @@
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#liters">
         <rdfs:label xml:lang="en">liters</rdfs:label>
+        <rdfs:label xml:lang="pl">litr</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://fuddi.eu/ontology/FGO/Units#micrograms -->
+
+    <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#micrograms">
+        <rdfs:label xml:lang="en">micrograms</rdfs:label>
+        <rdfs:label xml:lang="pl">mikrogram</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
     
 
@@ -98,6 +123,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#milligrams -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milligrams">
+        <rdfs:label xml:lang="pl">miligram</rdfs:label>
         <rdfs:label xml:lang="en">milligrams</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </rdfs:Datatype>
@@ -107,6 +133,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#milliliters -->
 
     <rdfs:Datatype rdf:about="https://fuddi.eu/ontology/FGO/Units#milliliters">
+        <rdfs:label xml:lang="pl">mililitr</rdfs:label>
         <rdfs:label xml:lang="en">milliliters</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
     </rdfs:Datatype>
@@ -128,6 +155,7 @@
 
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasEnergy">
         <rdfs:label xml:lang="en">has energy</rdfs:label>
+        <rdfs:label xml:lang="pl">ma energię</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy"/>
     </owl:DatatypeProperty>
     
@@ -138,6 +166,7 @@
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasMass">
         <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#hasQuantity"/>
         <rdfs:label xml:lang="en">has mass</rdfs:label>
+        <rdfs:label xml:lang="pl">ma masę</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMass"/>
     </owl:DatatypeProperty>
     
@@ -147,6 +176,7 @@
 
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasQuantity">
         <rdfs:label xml:lang="en">has quantity</rdfs:label>
+        <rdfs:label xml:lang="pl">ma ilość</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity"/>
     </owl:DatatypeProperty>
     
@@ -157,6 +187,7 @@
     <owl:DatatypeProperty rdf:about="https://fuddi.eu/ontology/FGO/Units#hasVolume">
         <rdfs:subPropertyOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#hasQuantity"/>
         <rdfs:label xml:lang="en">has volume</rdfs:label>
+        <rdfs:label xml:lang="pl">ma objętość</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume"/>
     </owl:DatatypeProperty>
     
@@ -177,6 +208,7 @@
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfEnergy">
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement"/>
+        <rdfs:label xml:lang="pl">jednostka energii</rdfs:label>
         <rdfs:label xml:lang="en">unit of energy</rdfs:label>
     </owl:Class>
     
@@ -186,6 +218,7 @@
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfMass">
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity"/>
+        <rdfs:label xml:lang="pl">jednostka masy</rdfs:label>
         <rdfs:label xml:lang="en">unit of mass</rdfs:label>
     </owl:Class>
     
@@ -194,6 +227,7 @@
     <!-- https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement -->
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement">
+        <rdfs:label xml:lang="pl">jednostka miary</rdfs:label>
         <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
     </owl:Class>
     
@@ -203,6 +237,7 @@
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity">
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfMeasurement"/>
+        <rdfs:label xml:lang="pl">jednostka ilości</rdfs:label>
         <rdfs:label xml:lang="en">unit of quantity</rdfs:label>
     </owl:Class>
     
@@ -212,6 +247,7 @@
 
     <owl:Class rdf:about="https://fuddi.eu/ontology/FGO/Units#UnitOfVolume">
         <rdfs:subClassOf rdf:resource="https://fuddi.eu/ontology/FGO/Units#UnitOfQuantity"/>
+        <rdfs:label xml:lang="pl">jednostka objętości</rdfs:label>
         <rdfs:label xml:lang="en">unit of volume</rdfs:label>
     </owl:Class>
 </rdf:RDF>
